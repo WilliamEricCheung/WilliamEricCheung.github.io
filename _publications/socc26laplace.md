@@ -1,4 +1,5 @@
 ---
+layout: academic
 title: "Laplace: Predictive Sandbox Orchestration for LLM Agents"
 collection: publications
 permalink: /publication/socc26laplace

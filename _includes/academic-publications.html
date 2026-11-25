@@ -1,0 +1,8 @@
+<ul class="paper-list">
+{% for paper in include.papers %}
+  <li class="paper">
+    <div class="paper-title">{% if paper.url %}<a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</div>
+    <div class="paper-meta{% if paper.review %} paper-status{% endif %}">{{ paper.venue }}{% if paper.paper %}<a href="{{ paper.paper }}" aria-label="Paper: {{ paper.title | escape }}">Paper</a>{% endif %}</div>
+  </li>
+{% endfor %}
+</ul>

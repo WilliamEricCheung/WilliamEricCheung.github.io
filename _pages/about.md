@@ -1,44 +1,49 @@
 ---
+layout: academic
 permalink: /
-title: "About Me"
-author_profile: true
-redirect_from: 
+title: "About"
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am a PhD Candidate of Reliable, Automated and Intelligent Distributed Systems Lab (RAIDS Lab) at Beihang University. I am under supervised by Prof. Tianyu Wo and [Prof. Renyu Yang](https://yangrenyu.github.io/). Before that, I successively worked for Amazon China and China Railway as a Software Develop Engineer(2021-2023). Prior to this, I received Master degree at Tandon School, New York University and Bachelor degree at School of Software, Beihang University.
+<section id="about">
+<h2>About</h2>
+<p>I am a PhD candidate in the Reliable, Automated and Intelligent Distributed Systems (RAIDS) Lab at Beihang University, advised by Prof. Tianyu Wo and <a href="https://yangrenyu.github.io/">Prof. Renyu Yang</a>.</p>
+<p>My research focuses on <strong>cloud computing and distributed systems</strong>, particularly request scheduling and resource allocation for large language model training and inference. Previously, I worked at Amazon China and China Railway Information Technology Group.</p>
+<p class="research-focus">LLM systems · Resource scheduling · Heterogeneous computing</p>
+</section>
 
-My research focuses on designing fast and reliable distributed and parellel computing systems, which mainly include training and inferencing system for large language models. 
+<section id="publications">
+<h2>Selected Publications</h2>
+{% include academic-publications.html papers=site.data.research.publications %}
+</section>
 
-Education
-======
-- 2023.9 - 2027.6: PhD. Software Engineering, supervised by Prof. Tianyu Wo and Prof. Renyu Yang, Beihang University, China   
-- 2019.8 - 2021.1:  Msc. Computer Engineering, New York University, United States   
-- 2015.9 - 2019.6:  BEng. Software Engineering, Beihang University, China  
+<section id="other-publications">
+<h2>Other Publications</h2>
+{% include academic-publications.html papers=site.data.research.other_publications %}
+</section>
 
-Selected Publication
-======
-- ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning (Under Review)
-- Laplace: Predictive Sandbox Orchestration for LLM Agents, ACM SoCC 2026 (CCF B, premier conference on Cloud)
-- Cauchy: Cost-Efficient and Fault-Tolerant LLM Serving on Heterogeneous GPUs. (Under Review)
-- Cauchy: A Cost-Efficient LLM Serving System through Adaptive Heterogeneous Deployment, ACM SoCC 2025 (CCF B, premier conference on Cloud)
+<section id="experience">
+<h2>Experience</h2>
+{% for entry in site.data.research.experience %}
+<div class="entry"><div><strong>{{ entry.organization }}</strong><div class="entry-meta">{{ entry.role }}</div></div><span class="entry-date">{{ entry.dates }}</span></div>
+{% endfor %}
+</section>
 
-Other Publication
-======
-- SparseRec: Predictive GPU Sharing and Data-Aware Scheduling for Recommendation Model Training, ACM SIGOPS ATC 2026 Workshop FRecSys'26
-- Maestro: Workload-Aware Cross-Cluster Scheduling for LLM-Based Multi-Agent Systems, IEEE ICDCS 2026 (CCF B)
+<section id="education">
+<h2>Education</h2>
+{% for entry in site.data.research.education %}
+<div class="entry"><div><strong>{{ entry.organization }}</strong><div class="entry-meta">{{ entry.degree }}</div></div><span class="entry-date">{{ entry.dates }}</span></div>
+{% endfor %}
+</section>
 
-Work Experience
-======
-- 2026.04 - 2026.10     AI Infrastructure Research Intern, Tencent Co., Ltd.
-- 2024.08 - 2025.08:    AI Inference Engine Develop Intern, Kuaishou Inc.
-- 2022.05 - 2023.04:    Software Develop Engineer, Amazon China Co., Ltd.
-- 2021.04 - 2023.04:    Software Develop Engineer, China Railway Information Technology Group Co., Ltd
-- 2020.10 - 2020.12:    Software Develop Engineer Intern, Huawei Technologies Co., Ltd.
-- 2019.03 - 2019.05:    Software Develop Engineer Intern, Xiaomi Technologies Co., Ltd.
-- 2018.07 - 2018.11:    Software Develop Engineer Intern, Computer Network Information Center, Chinese Academy of Sciences
+<section id="projects">
+<h2>Research Projects</h2>
+{% include academic-projects.html %}
+</section>
 
-Professional Service
-======
-- Reviewer of ACM Computing Surveys (CSUR)
+<section id="service">
+<h2>Service</h2>
+<p>Reviewer, ACM Computing Surveys (CSUR)</p>
+</section>

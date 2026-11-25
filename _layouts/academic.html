@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Adapted from Minimal Light's two-column layout (CC0): https://github.com/yaoyao-liu/minimal-light -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% unless page.permalink == '/' %}{{ page.title | escape }} · {% endunless %}Yihui Zhang</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="wrapper">
+    <header class="profile">
+      <a href="{{ '/' | relative_url }}" aria-label="Yihui Zhang home"><img class="avatar" src="{{ '/images/profile.png' | relative_url }}" alt="Yihui Zhang" width="144" height="144"></a>
+      <h1><a href="{{ '/' | relative_url }}">Yihui Zhang</a><span lang="zh">张艺辉</span></h1>
+      <p class="position">PhD Candidate</p>
+      <p>Beihang University<br><span class="muted">Beijing, China</span></p>
+      <a class="email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <div class="profile-links"><a href="https://github.com/{{ site.author.github }}">GitHub</a><a href="{{ site.author.orcid }}">ORCID</a></div>
+      <nav aria-label="Main navigation">
+        {% for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+    <main id="main" tabindex="-1">
+      {% unless page.permalink == '/' %}<h1 class="page-title">{{ page.title }}</h1>{% endunless %}
+      {% if page.paperurl %}<p class="paper-meta">{{ page.venue }} · {{ page.date | date: '%Y' }} <a href="{{ page.paperurl }}">Read paper</a></p>{% endif %}
+      {{ content }}
+      <footer class="site-footer">© {{ site.time | date: '%Y' }} Yihui Zhang <span>Design adapted from <a href="https://github.com/yaoyao-liu/minimal-light">Minimal Light</a>.</span></footer>
+    </main>
+  </div>
+</body>
+</html>

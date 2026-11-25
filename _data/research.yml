@@ -1,0 +1,55 @@
+publications:
+  - title: "ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning"
+    venue: "Under review"
+    review: true
+  - title: "Laplace: Predictive Sandbox Orchestration for LLM Agents"
+    venue: "ACM SoCC 2026"
+    url: /publication/socc26laplace
+    paper: https://doi.org/10.1145/3828161.3857858
+  - title: "Cauchy: Cost-Efficient and Fault-Tolerant LLM Serving on Heterogeneous GPUs"
+    venue: "Under review"
+    review: true
+  - title: "Cauchy: A Cost-Efficient LLM Serving System through Adaptive Heterogeneous Deployment"
+    venue: "ACM SoCC 2025"
+    url: /publication/socc25cauchy
+    paper: https://doi.org/10.1145/3772052.3772264
+other_publications:
+  - title: "Maestro: Workload-Aware Cross-Cluster Scheduling for LLM-Based Multi-Agent Systems"
+    venue: "IEEE ICDCS 2026"
+  - title: "SparseRec: Predictive GPU Sharing and Data-Aware Scheduling for Recommendation Model Training"
+    venue: "FRecSys 2026 Workshop"
+experience:
+  - organization: Tencent
+    role: AI Infrastructure Research Intern
+    dates: "2026.05 – 2026.10"
+  - organization: Kuaishou
+    role: AI Inference Engine Development Intern
+    dates: "2024.08 – 2025.07"
+  - organization: Amazon China
+    role: Software Development Engineer
+    dates: "2022.05 – 2023.04"
+  - organization: China Railway Information Technology Group
+    role: Engineer
+    dates: "2021.03 – 2022.04"
+  - organization: Huawei
+    role: Software Development Intern
+    dates: "2020.10 – 2020.12"
+education:
+  - organization: Beihang University
+    degree: PhD in Software Engineering
+    dates: "2023.09 – 2027.06 (expected)"
+  - organization: New York University
+    degree: MSc in Computer Engineering
+    dates: "2019.08 – 2021.01"
+  - organization: Beihang University
+    degree: BEng in Software Engineering
+    dates: "2015.09 – 2019.06"
+projects:
+  - title: Intelligent Computing Systems for the Integration and Optimization of Domestic Heterogeneous Accelerators
+    program: National Key R&D Program of China
+    dates: "2024.12–2027.11"
+    role: Student Lead
+  - title: Intelligent Development, Testing, and Operations for Cloud-Native Software Ecosystems
+    program: National Key R&D Program of China
+    dates: "2024.12–2027.11"
+    role: Student Lead

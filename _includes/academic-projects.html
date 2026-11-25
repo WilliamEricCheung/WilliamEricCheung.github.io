@@ -1,0 +1,5 @@
+<ul class="project-list">
+{% for project in site.data.research.projects %}
+  <li><strong>{{ project.program }}</strong> — {{ project.title }} <span class="entry-meta">({{ project.dates }}; {{ project.role }}).</span></li>
+{% endfor %}
+</ul>
