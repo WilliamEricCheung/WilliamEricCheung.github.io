@@ -46,4 +46,5 @@ redirect_from:
 <section id="service">
 <h2>Service</h2>
 <p>Reviewer, ACM Computing Surveys (CSUR)</p>
+<p>Reviewer, Journal of Software: Evolution and Process</p>
 </section>
