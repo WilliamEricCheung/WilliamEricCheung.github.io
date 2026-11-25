@@ -1,7 +1,7 @@
 publications:
   - title: "ARC: Adaptive Rollout Control for Efficient Synchronous LLM Reinforcement Learning"
-    venue: "Under review"
-    review: true
+    venue: "arXiv:2611.29156, 2026"
+    paper: https://arxiv.org/abs/2611.29156
   - title: "Laplace: Predictive Sandbox Orchestration for LLM Agents"
     venue: "ACM SoCC 2026"
     url: /publication/socc26laplace
